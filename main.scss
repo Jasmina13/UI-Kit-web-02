@@ -1,0 +1,66 @@
+@import "./sass/variables/variables";
+@import "./sass/mixin/all-mixin";
+@import "./sass/all-blocks/all-blocks";
+
+.main-section{
+    padding:  0 150px;
+    .main-section__card-items{
+        @include flex-between;
+    }
+    .card-items__title{
+        padding: 20px;
+        font-family: sans-serif;
+        font: 40px normal;
+        display: inline-block;
+        h2{
+            font: 40px normal;
+            display: inline-block;
+        }
+        div{
+            width: 510px;
+            span{
+                padding: 0 0 0 10px;
+                font: 40px normal;
+                color: #D8451F;
+            }
+            .text{
+                color: black;
+
+            }
+        }
+        button{
+            width: 180px;
+            display: block;
+            margin-top: 100px;
+            padding: 5px 20px;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+            @include flex-between;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+    .card-items__image-card{
+        position: relative;
+        .absolute-img{
+            top: -60px;
+            left: -90px;
+            position: absolute;
+            z-index: 1;
+        }
+        .bg-img{
+            filter: grayscale(100%);
+        }
+    }
+
+}
+.main-end{
+    width: 100%;
+    text-align: center;
+    select{
+        border: none;
+        border-bottom: 1px solid black;
+    }
+}
